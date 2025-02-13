@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DABF910E-FAB5-87C9-141B-B7ECBABA081D" name="CLIENTI">
+<createdBy>Simina</createdBy>
+<createdTime>2024-10-26 18:21:46 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_client" id="631D2758-5C67-D8D3-58C7-AE2661572ED4">
+<createdBy>Simina</createdBy>
+<createdTime>2024-10-26 18:21:56 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<constraintName>clienti_id_client_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(id_client,&apos;^\d{3}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_client" id="5D911383-DABA-B365-5F7F-6431F8907E0A">
+<createdBy>Simina</createdBy>
+<createdTime>2024-10-26 18:22:23 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<constraintName>clienti_nume_client_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(nume_client,&apos;^[A-Za-zăîâșțĂÎÂȘȚ ]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="15D1C0F8-C076-03B5-21BD-CC2830DC083C" name="CLIENTI_nume_client_UK">
+<createdBy>Simina</createdBy>
+<createdTime>2024-10-27 09:47:05 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="false"/>
+</engineerTo>
+<newElementsIDs>5D911383-DABA-B365-5F7F-6431F8907E0A</newElementsIDs>
+<usedAttributes>
+<attributeRef>5D911383-DABA-B365-5F7F-6431F8907E0A</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="DA23101D-22C3-6708-3153-C79AE2491771" name="CLIENTI_PK">
+<createdBy>Simina</createdBy>
+<createdTime>2024-10-27 09:47:50 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>631D2758-5C67-D8D3-58C7-AE2661572ED4</newElementsIDs>
+<usedAttributes>
+<attributeRef>631D2758-5C67-D8D3-58C7-AE2661572ED4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

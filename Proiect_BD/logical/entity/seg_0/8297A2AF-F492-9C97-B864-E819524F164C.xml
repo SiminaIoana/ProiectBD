@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8297A2AF-F492-9C97-B864-E819524F164C" name="CATEGORIE">
+<createdBy>Simina</createdBy>
+<createdTime>2024-10-26 18:31:59 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_categorie" id="DF099686-F73B-4D60-7C2B-DCFD81295838">
+<createdBy>Simina</createdBy>
+<createdTime>2024-10-26 18:32:08 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<constraintName>categorie_id_categorie_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(id_categorie,&apos;^\d{3}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_categorie" id="08F0EEBB-AD16-3050-258E-6E008175C174">
+<createdBy>Simina</createdBy>
+<createdTime>2024-10-26 18:32:56 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<constraintName>categorie_nume_categorie_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(nume_categorie,&apos;^[A-Za-z\s-]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D7F6C5FB-289F-BB94-2117-70269C997C7A" name="CATEGORIE_PK">
+<createdBy>Simina</createdBy>
+<createdTime>2024-10-26 18:35:15 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>DF099686-F73B-4D60-7C2B-DCFD81295838</newElementsIDs>
+<usedAttributes>
+<attributeRef>DF099686-F73B-4D60-7C2B-DCFD81295838</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

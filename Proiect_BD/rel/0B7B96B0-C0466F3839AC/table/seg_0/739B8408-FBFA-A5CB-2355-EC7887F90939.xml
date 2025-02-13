@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="739B8408-FBFA-A5CB-2355-EC7887F90939" name="COMANDA">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>2CBD26FD-F9A7-3570-4C43-D3E339D78463</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_comanda" id="B0A2270A-DFFE-8309-DAD2-745BDF74C6E8">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>DC075F8A-35D7-1F71-2DF3-7C052BD356CD</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<constraintName>comanda_id_comanda_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(id_comanda,&apos;^\d{3}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>300</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="data_comanda" id="B603FBB9-0E2C-6590-1A62-E16E5433E491">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>542CA45B-3C2D-7016-68D4-706AFC827408</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_client" id="F9774AB4-88F0-AD0B-B9A6-7586A5C65733">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>1200056D-C689-C9C5-BFAB-739C0601BD9F</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC127042-9917-3EA2-94B5-89C206BE30AF" referredColumn="278588C8-12BF-E3A7-31E1-1C76583067FD"/>
+</associations>
+</Column>
+<Column name="metoda_plata" id="CC298C9D-4A41-34B2-D8A7-734F25936873">
+<createdBy>Simina</createdBy>
+<createdTime>2024-12-08 18:20:51 UTC</createdTime>
+<generatorID>C53E0A6C-0703-3DF6-29E6-B74EEE677785</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<constraintName>comanda_metoda_plata_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE( metoda_plata, &apos;^(cash|card)$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="metoda_livrare" id="EB1AD019-9C08-E3BB-7EFB-68FB8FF578DD">
+<createdBy>Simina</createdBy>
+<createdTime>2024-12-08 18:32:47 UTC</createdTime>
+<generatorID>5801BA0F-1878-741D-AF89-7D24BCE61DB9</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<constraintName>comanda_metoda_livrare_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE( metoda_livrare, &apos;^(curier|posta)$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F205BD74-D488-0802-5064-9D850645E398" name="COMANDA_PK">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>6B6AF456-85FB-AF34-3AED-356B81F89BD7</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0A2270A-DFFE-8309-DAD2-745BDF74C6E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9233A9B5-7BF5-CB39-49CF-B6DFA7E5B36C" name="COMANDA_CLIENTI_FK">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>9CD22E02-1FE0-4FB8-32FD-DEE1C0284D89</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9774AB4-88F0-AD0B-B9A6-7586A5C65733"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

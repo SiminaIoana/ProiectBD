@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0088D6C1-754B-3D88-7B9D-3BFCB060C805" name="PRODUSE">
+<createdBy>Simina</createdBy>
+<createdTime>2024-10-26 16:45:33 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_produs" id="552F9A51-0700-FC99-0F7D-AFE9C57954EF">
+<createdBy>Simina</createdBy>
+<createdTime>2024-10-26 16:49:15 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<constraintName>produse_id_prod_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(id_produs,&apos;^\d{3}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_produs" id="70557296-7AC4-E627-B196-B63E02A4CD6A">
+<createdBy>Simina</createdBy>
+<createdTime>2024-10-26 16:49:52 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<constraintName>produse_nume_produs_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(nume_produs,&apos;^[A-Za-zăîâșțĂÎÂȘȚ ]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>35,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pret" id="DB508A42-3DA1-9B48-33BF-EF3B60A8659C">
+<createdBy>Simina</createdBy>
+<createdTime>2024-10-26 16:50:58 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<constraintName>produse_pret_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(pret,&apos;^(100|[1-9][0-9]{2}|1000)$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stoc" id="CA803B4C-5A1E-4A0C-D136-407794B9811B">
+<createdBy>Simina</createdBy>
+<createdTime>2024-10-26 19:48:47 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<constraintName>produse_stoc_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(stoc,&apos;^[0-9]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_categorie" id="5E46CC3E-2D03-BBEA-6371-3128244DC42B">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-10 20:27:41 UTC</createdTime>
+<generatorID>3A68598F-5D31-3392-5D57-45073AEE490B</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<referedAttribute>DF099686-F73B-4D60-7C2B-DCFD81295838</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AC374996-799D-9867-2C44-3B6AA24BC7FC" name="PRODUSE_PK">
+<createdBy>Simina</createdBy>
+<createdTime>2024-10-26 18:20:17 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>552F9A51-0700-FC99-0F7D-AFE9C57954EF</newElementsIDs>
+<usedAttributes>
+<attributeRef>552F9A51-0700-FC99-0F7D-AFE9C57954EF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

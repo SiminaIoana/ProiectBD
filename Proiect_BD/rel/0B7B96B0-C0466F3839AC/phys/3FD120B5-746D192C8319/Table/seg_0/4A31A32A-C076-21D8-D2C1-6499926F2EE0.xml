@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="detalii_comanda" directorySegmentName="seg_0" id="4A31A32A-C076-21D8-D2C1-6499926F2EE0">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:05:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_comanda" id="0B95202A-4059-7D0D-10A1-CE11AC1E5463">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:05:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_produs" id="A17F2F18-62FA-C067-5196-FD5487C4F9CC">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:05:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cantitate" id="BDC48537-53DA-A5A0-2D8B-DCA62D78F676">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:05:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="detalii_comanda_PRODUSE_FK" id="69C7A2A6-FBAF-94F7-0ABE-AA36DF02DF37">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:05:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="detalii_comanda_COMANDA_FK" id="6B06C2C0-7D93-2CA1-5936-66DC9A10C3C6">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:05:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="detalii_comanda_PK" id="6E970222-BD2B-9A9D-2A07-AA4A5900176A">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:05:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

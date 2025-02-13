@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PRODUSE" directorySegmentName="seg_0" id="7587ACCF-D085-451E-100E-BDE793D6859C">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:05:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_produs" id="2C146E9B-6201-D3E0-6BC3-258250E234B7">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:05:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="pret" id="4E78112D-2E42-377B-1236-9196FB7EF866">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:05:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nume_produs" id="6487B69D-5FC9-D889-4DA3-2E09C302FC28">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:05:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_categorie" id="7C79A91E-C7DF-1A4A-D59D-AECEFA319DD2">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:05:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="stoc" id="D76B446D-E341-E2C7-1F65-CA22FD4370C3">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:05:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRODUSE_CATEGORIE_FK" id="8FBBAA6C-5CD0-8BE7-9C94-672A0DCF3B46">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:05:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRODUSE_PK" id="4AB46B24-A5F8-040B-B213-4E2D8B7547A3">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:05:11 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="categorie_produse_fk" directorySegmentName="seg_0" id="3A68598F-5D31-3392-5D57-45073AEE490B">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-10 20:27:41 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<sourcePk>D7F6C5FB-289F-BB94-2117-70269C997C7A</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>contine</nameOnSource>
+<nameOnTarget>apartin unei</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8297A2AF-F492-9C97-B864-E819524F164C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0088D6C1-754B-3D88-7B9D-3BFCB060C805</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

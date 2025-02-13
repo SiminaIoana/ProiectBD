@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_det_clienti_d_inregistrarii" directorySegmentName="seg_0" id="29CC7473-859F-FDE0-4449-1C21A66892BB">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:36:32 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+    -- Verificăm dacă data_inregistrarii este mai mică decât 1 ianuarie 2020
+    IF :NEW.data_inregistrarii < TO_DATE('2020-01-01', 'YYYY-MM-DD')
+    THEN
+        RAISE_APPLICATION_ERROR(-20001, 'data_inregistrarii nu poate fi mai mică decât 1 ianuarie 2020.');
+    END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>EC3A3F95-E3EA-B21E-EC99-6D2138F0CA7F</table>
+</TriggerOraclev10g>

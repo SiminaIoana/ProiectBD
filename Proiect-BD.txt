@@ -1,0 +1,50 @@
+Nume: Rusu Ioana-Simina, Grupa: 1307B
+
+Tema proiectului: Gestiunea unu magazin online cu articole sportive de iarna
+
+Descriere non-tehnica: Un magazin de articole sportive doreste gestionarea categoriilor de produse pe care le are si a comenzilor date de catre clienti. Avem un numar limitat de produse din fiecare categorie. 
+Fiecare produs face parte dintr-o anumita categorie: Imbracaminte,Incaltaminte,Protectie,Accesorii, Echipament.
+Pretul unui produs poate sa difere, preturile in general incepand de la 100 la 1000 de lei.
+ In momentul in care ultimul produs dintr-o anumita categorie va fi vandut, stocul acelui tip de produs va fi 0, nemaiputand fi achizitionat. 
+ Baza de date nu gestioneaza cumpararea, ci doar vanzarea produselor si stocul fiecaruia pana ramane indisponibil.
+
+Constrangeri:
+	
+
+Descrierea non-tehnica:
+* Entitatea PRODUSE: (id_produs, nume_produs, stoc, pret)
+   * id_produs: NUMERIC(3)
+   * nume_produs VARCHAR2(35)
+   * stoc: NUMERIC(4)
+   * pret: NUMERIC(3)
+
+
+* Entitatea DETALII_CLIENTI(email, adresa, nr_telefon, data_nasterii, data_inregistrarii)
+   * email: VARCHAR2(30)
+   * adresa: VARCHAR2(30)
+   * nr_telefon: VARCHAR2(10)
+   * data_nasterii: DATE
+   * data_inregistrarii: DATE
+
+* Entitatea CLIENT: (id_client, nume)
+   * id_client: NUMERIC(3)
+   * nume: VARCHAR2(50)
+ 
+* Entitatea  COMANDA: (id_comanda, data_comanda,total,metoda_plata,metoda_livrare)
+  * id_comanda: NUMERIC(3)
+  * data_comanda: DATE
+  * total: NUMERIC(3)
+  * metoda_plata: VARCHAR2(5)
+  * metoda_livrare: VARCHAR2(8)
+
+
+* Entitatea CATEGORIE: (id_categorie, denumire)
+  * id_categorie: NUMERIC(3)
+  * denumire: VARCHAR2(4)
+
+* Entitatea  DETALII_COMANDA: (id_produs, id_comanda, cantitate)
+  * id_comanda: NUMERIC(3)
+  * id_produse: NUMERIC(3)
+  * cantitate: NUMERIC(2)
+ 
+

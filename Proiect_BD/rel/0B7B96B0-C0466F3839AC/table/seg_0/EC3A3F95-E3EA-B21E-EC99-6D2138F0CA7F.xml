@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EC3A3F95-E3EA-B21E-EC99-6D2138F0CA7F" name="DETALII_CLIENTI">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>297C5F59-B629-0B4B-C8DD-77F7295442B7</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="email" id="7D770D8C-5945-EB0A-3ADB-5A3CCBCC946D">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>F147398D-2FD8-8AFE-9B60-AF308ED56718</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<constraintName>detalii_clienti_email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email,&apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="adresa" id="41AF51BA-2911-F030-8086-9169DFE2375D">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>A6B44843-C0CA-7460-6C92-0DC507E45F7F</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<constraintName>detalii_clienti_adresa_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_telefon" id="94DD6E36-E05D-6BDF-7202-C3AED882E2EA">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>4027CEF0-3B49-417D-1EEF-4CAD1746DB30</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<constraintName>detalii_clienti_nr_telefon_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nr_telefon,&apos;^\+?\d{10,15}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_nasterii" id="96C070CC-E19E-5E87-016E-9396D846A883">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>8EE83A8F-0731-F36C-90F9-842C4FCD7940</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_inregistrarii" id="150C9DF6-86F4-BB0A-06CE-E935496242D5">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>39FCC0C5-3231-9B5C-F814-1E449F12D5FD</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<constraintName>detalii_clienti_d_inreg_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_client" id="D2DAB3E1-CDD6-4A67-528E-4914AC3AD49B">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>67BCA364-1815-6CD3-1F42-BDB00E54C752</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F68DADB-FBAE-A28C-7D84-B799A5280288" referredColumn="278588C8-12BF-E3A7-31E1-1C76583067FD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E365B391-E0CE-8336-A666-57BEAF60575D" name="DETALII_CLIENTI_email_UN">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>80933E0C-65FC-0300-B4E7-87F0400D46BC</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D770D8C-5945-EB0A-3ADB-5A3CCBCC946D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E9DD729-0CC9-CC2A-1037-BC3273A3EB47" name="DETALII_CLIENTI_adresa_UN">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>95504F18-EDCA-A847-EA1B-A63C689DEC96</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41AF51BA-2911-F030-8086-9169DFE2375D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18C013DC-1FAB-EC5D-02AB-7AAC1205E33E" name="DETALII_CLIENTI_nr_telefon_UN">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>F3EB9243-51C3-6362-2CD7-2F2F02A4F9C7</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94DD6E36-E05D-6BDF-7202-C3AED882E2EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="140F5C6B-E840-91FB-B5E0-43CC04753C3D" name="DETALII_CLIENTI__IDX">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>65D0B2CC-7DED-FC25-8AD4-20303284AE67</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D2DAB3E1-CDD6-4A67-528E-4914AC3AD49B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="503BF008-2F49-E2D6-22E8-B3D93395BDB3" name="DETALII_CLIENTI_CLIENTI_FK">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>65D0B2CC-7DED-FC25-8AD4-20303284AE67</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2DAB3E1-CDD6-4A67-528E-4914AC3AD49B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

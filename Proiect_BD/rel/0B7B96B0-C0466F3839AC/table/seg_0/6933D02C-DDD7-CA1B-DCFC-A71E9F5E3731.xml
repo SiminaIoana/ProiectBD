@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6933D02C-DDD7-CA1B-DCFC-A71E9F5E3731" name="CATEGORIE">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>8297A2AF-F492-9C97-B864-E819524F164C</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_categorie" id="6EE5A0D9-4CE8-7954-A5EE-AE65DA6C4E7C">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>DF099686-F73B-4D60-7C2B-DCFD81295838</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<constraintName>categorie_id_categorie_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(id_categorie,&apos;^\d{3}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>100</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="nume_categorie" id="582C70F7-48CE-FEFF-2C68-1E4367CCBCCC">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>08F0EEBB-AD16-3050-258E-6E008175C174</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<constraintName>categorie_nume_categorie_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(nume_categorie,&apos;^[A-Za-z\s-]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B5D5A06-1ED8-159A-C58C-6AA3AB635249" name="CATEGORIE_PK">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>D7F6C5FB-289F-BB94-2117-70269C997C7A</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6EE5A0D9-4CE8-7954-A5EE-AE65DA6C4E7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="297C5F59-B629-0B4B-C8DD-77F7295442B7" name="DETALII_CLIENTI">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-07 08:10:01 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="email" id="F147398D-2FD8-8AFE-9B60-AF308ED56718">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-07 08:11:17 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<constraintName>detalii_clienti_email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email,&apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adresa" id="A6B44843-C0CA-7460-6C92-0DC507E45F7F">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-07 08:11:37 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<constraintName>detalii_clienti_adresa_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_telefon" id="4027CEF0-3B49-417D-1EEF-4CAD1746DB30">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-07 08:12:07 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<constraintName>detalii_clienti_nr_telefon_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nr_telefon,&apos;^\+?\d{10,15}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_nasterii" id="8EE83A8F-0731-F36C-90F9-842C4FCD7940">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-07 08:13:30 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_inregistrarii" id="39FCC0C5-3231-9B5C-F814-1E449F12D5FD">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-07 08:14:48 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<constraintName>detalii_clienti_d_inreg_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_client" id="67BCA364-1815-6CD3-1F42-BDB00E54C752">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-08 21:10:28 UTC</createdTime>
+<generatorID>65D0B2CC-7DED-FC25-8AD4-20303284AE67</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<referedAttribute>631D2758-5C67-D8D3-58C7-AE2661572ED4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="80933E0C-65FC-0300-B4E7-87F0400D46BC" name="detalii_clienti_email_uk">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-07 08:26:46 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="false"/>
+</engineerTo>
+<newElementsIDs>F147398D-2FD8-8AFE-9B60-AF308ED56718</newElementsIDs>
+<usedAttributes>
+<attributeRef>F147398D-2FD8-8AFE-9B60-AF308ED56718</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="95504F18-EDCA-A847-EA1B-A63C689DEC96" name="detalii_clienti_adresa_uk">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-07 08:29:23 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="false"/>
+</engineerTo>
+<newElementsIDs>A6B44843-C0CA-7460-6C92-0DC507E45F7F</newElementsIDs>
+<usedAttributes>
+<attributeRef>A6B44843-C0CA-7460-6C92-0DC507E45F7F</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F3EB9243-51C3-6362-2CD7-2F2F02A4F9C7" name="detalii_clienti_nr_telefon">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-07 08:34:58 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="false"/>
+</engineerTo>
+<newElementsIDs>4027CEF0-3B49-417D-1EEF-4CAD1746DB30</newElementsIDs>
+<usedAttributes>
+<attributeRef>4027CEF0-3B49-417D-1EEF-4CAD1746DB30</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

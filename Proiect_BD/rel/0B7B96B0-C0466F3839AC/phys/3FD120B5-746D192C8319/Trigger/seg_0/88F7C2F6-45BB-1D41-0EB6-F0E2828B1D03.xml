@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_det_clienti_d_nasterii" directorySegmentName="seg_0" id="88F7C2F6-45BB-1D41-0EB6-F0E2828B1D03">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 16:17:29 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+   IF(:new.data_nasterii > ADD_MONTHS(SYSDATE, -16 * 12)) THEN
+      RAISE_APPLICATION_ERROR(-20001,
+        'Data invalida: ' || TO_CHAR(:new.data_nasterii, 'DD.MM.YYYY') || 
+        ' - Persoana trebuie sa aiba cel putin 16 ani.');
+   END IF;
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<table>EC3A3F95-E3EA-B21E-EC99-6D2138F0CA7F</table>
+</TriggerOraclev10g>

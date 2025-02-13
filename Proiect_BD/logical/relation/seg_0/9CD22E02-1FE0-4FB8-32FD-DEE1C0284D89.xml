@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="clienti_comanda_fk" directorySegmentName="seg_0" id="9CD22E02-1FE0-4FB8-32FD-DEE1C0284D89">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-10 20:28:22 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<engineerTo>
+<item key="0B7B96B0-E97C-3906-7D61-C0466F3839AC" value="true"/>
+</engineerTo>
+<sourcePk>DA23101D-22C3-6708-3153-C79AE2491771</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>plaseaza </nameOnSource>
+<nameOnTarget>sunt ale</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DABF910E-FAB5-87C9-141B-B7ECBABA081D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2CBD26FD-F9A7-3570-4C43-D3E339D78463</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

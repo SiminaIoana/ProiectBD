@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="531A47B7-4278-083A-8F15-5C6991E83505" containerWithKeyObject="4A31A32A-C076-21D8-D2C1-6499926F2EE0" localFKIndex="6B06C2C0-7D93-2CA1-5936-66DC9A10C3C6" name="detalii_comanda_COMANDA_FK">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>9560B589-3851-1040-52FD-4AA0C869A901</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<referredTableLongName>COMANDA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>739B8408-FBFA-A5CB-2355-EC7887F90939</referredTableID>
+<keyObject>F205BD74-D488-0802-5064-9D850645E398</keyObject>
+<referredKeyID>F205BD74-D488-0802-5064-9D850645E398</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_comanda</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="209D3C9B-0FE5-E149-FAE1-CD23B0B62691" name="CLIENTI">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>DABF910E-FAB5-87C9-141B-B7ECBABA081D</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_client" id="278588C8-12BF-E3A7-31E1-1C76583067FD">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>631D2758-5C67-D8D3-58C7-AE2661572ED4</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<constraintName>clienti_id_client_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(id_client,&apos;^\d{3}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementStartWith>500</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_client" id="55CC6DE1-A573-CE8B-0095-53B9129AB8F2">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>5D911383-DABA-B365-5F7F-6431F8907E0A</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<constraintName>clienti_nume_client_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(nume_client,&apos;^[A-Za-zăîâșțĂÎÂȘȚ ]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C8903E45-2718-BB31-1BD6-18A37C906396" name="CLIENTI_PK">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>DA23101D-22C3-6708-3153-C79AE2491771</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="278588C8-12BF-E3A7-31E1-1C76583067FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3EFDB47-0823-2FB8-4E0D-C4EBC2C5950E" name="CLIENTI_nume_client_UN">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>15D1C0F8-C076-03B5-21BD-CC2830DC083C</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55CC6DE1-A573-CE8B-0095-53B9129AB8F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

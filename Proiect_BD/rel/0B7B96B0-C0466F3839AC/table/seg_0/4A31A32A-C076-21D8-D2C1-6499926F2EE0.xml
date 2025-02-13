@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4A31A32A-C076-21D8-D2C1-6499926F2EE0" name="detalii_comanda">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_produs" id="A17F2F18-62FA-C067-5196-FD5487C4F9CC">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+<associations>
+<colAssociation fkAssociation="6D389B61-C660-5CD9-BE39-EA7DDC9A422C" referredColumn="2C146E9B-6201-D3E0-6BC3-258250E234B7"/>
+</associations>
+</Column>
+<Column name="id_comanda" id="0B95202A-4059-7D0D-10A1-CE11AC1E5463">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="531A47B7-4278-083A-8F15-5C6991E83505" referredColumn="B0A2270A-DFFE-8309-DAD2-745BDF74C6E8"/>
+</associations>
+</Column>
+<Column name="cantitate" id="BDC48537-53DA-A5A0-2D8B-DCA62D78F676">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>13F3C5B9-05DA-8F16-0B40-18271C28C286</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E970222-BD2B-9A9D-2A07-AA4A5900176A" name="detalii_comanda_PK">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A17F2F18-62FA-C067-5196-FD5487C4F9CC"/>
+<colUsage columnID="0B95202A-4059-7D0D-10A1-CE11AC1E5463"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69C7A2A6-FBAF-94F7-0ABE-AA36DF02DF37" name="detalii_comanda_PRODUSE_FK">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>9560B589-3851-1040-52FD-4AA0C869A901</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A17F2F18-62FA-C067-5196-FD5487C4F9CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B06C2C0-7D93-2CA1-5936-66DC9A10C3C6" name="detalii_comanda_COMANDA_FK">
+<createdBy>Simina</createdBy>
+<createdTime>2024-11-24 15:28:09 UTC</createdTime>
+<generatorID>9560B589-3851-1040-52FD-4AA0C869A901</generatorID>
+<ownerDesignName>Proiect_BD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B95202A-4059-7D0D-10A1-CE11AC1E5463"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
